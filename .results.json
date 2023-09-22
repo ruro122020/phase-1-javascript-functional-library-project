@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 4,
-    "tests": 7,
-    "passes": 7,
+    "suites": 5,
+    "tests": 12,
+    "passes": 12,
     "pending": 0,
     "failures": 1,
-    "start": "2023-09-22T21:10:00.236Z",
-    "end": "2023-09-22T21:10:00.446Z",
-    "duration": 210
+    "start": "2023-09-22T23:25:50.688Z",
+    "end": "2023-09-22T23:25:51.130Z",
+    "duration": 442
   },
   "tests": [
     {
@@ -55,6 +55,41 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when not passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original array",
+      "fullTitle": "index.js myReduce does not modify the original array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value from object values",
+      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original object",
+      "fullTitle": "index.js myReduce does not modify the original object",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -63,13 +98,13 @@
   "pending": [],
   "failures": [
     {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
+      "title": "returns the value if found",
+      "fullTitle": "index.js myFind returns the value if found",
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: myReduce is not defined\n    at Context.<anonymous> (test/indexTest.js:71:29)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "myReduce is not defined"
+        "stack": "ReferenceError: myFind is not defined\n    at Context.<anonymous> (test/indexTest.js:106:7)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "myFind is not defined"
       }
     }
   ],
@@ -119,6 +154,41 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when not passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original array",
+      "fullTitle": "index.js myReduce does not modify the original array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value from object values",
+      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original object",
+      "fullTitle": "index.js myReduce does not modify the original object",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
