@@ -18,7 +18,7 @@ function myMap(collection, callback) {
     if (!Array.isArray(collection)) {
         newArray = Object.values(collection)
     } else {
-        newArray = collection
+        newArray = [...collection]
     }
 
     const mappedArray = []
@@ -50,6 +50,32 @@ function myReduce(collection, callback, acc){
     return total
 }
 
-console.log(myReduce([1, 2, 3], function(acc, val, collection) { return acc + val; }, 10));
+/*
+Looks through each value in the collection, returning the first one that passes a truth test (predicate) 
+or undefined if no value passes the test.The function should return as soon as it finds an acceptable element,
+without traversing the rest of the collection.
 
-console.log(myReduce({one: 1, two: 2, three: 3}, function(acc, val, collection) { return acc + val; }));
+The function should iterate through each element in the array. 
+Return the first element that passes the truth test(condition) and 
+if no value passes the test return undefined. 
+
+psudo code 
+iterate through the newArray 
+    if callback(element)
+        return element
+*/
+function myFind(collection, predicate){
+    let newArray;
+    if (!Array.isArray(collection)) {
+        newArray = Object.values(collection)
+    } else {
+        newArray = [...collection]
+    }
+
+    for(let element of newArray){
+        if(predicate(element)){
+            return element
+        }
+    }
+
+}
