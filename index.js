@@ -116,3 +116,41 @@ function myFilter(collection, predicate){
     }
     return matchedElements
 }
+
+/*
+Parameter(s):
+
+a collection (either an object or an array)
+Return value:
+
+An integer
+Behavior:
+
+Return the number of values in the collection.
+
+Example function calls:
+
+mySize({one: 1, two: 2, three: 3});
+=> 3
+
+mySize([]);
+=> 0
+
+This function should return the size of the array. It should count how many elements the array has and return that number as
+an integer. 
+
+psudo code 
+check to see if the collection is an object or array. if its an array make a copy of it, if its an object convert it to an 
+array and use the values as the elements of the array
+*/
+
+function mySize(collection){
+    let newArray;
+    if(!Array.isArray(collection)){
+        newArray = Object.values(collection)
+    }else{
+        newArray = [...collection]
+    }
+
+    return newArray.length
+}
