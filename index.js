@@ -200,3 +200,7 @@ function myLast(collection, n){
 function myKeys(object){
     return Object.keys(object)
 }
+
+function myValues(object){
+    return Object.values(object)
+}
