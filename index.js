@@ -196,3 +196,7 @@ function myLast(collection, n){
         return newArray[newArray.length - 1]
     }
 }
+
+function myKeys(object){
+    return Object.keys(object)
+}
