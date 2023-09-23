@@ -1,19 +1,19 @@
 {
   "stats": {
-    "suites": 8,
-    "tests": 19,
-    "passes": 19,
+    "suites": 10,
+    "tests": 23,
+    "passes": 23,
     "pending": 0,
     "failures": 1,
-    "start": "2023-09-23T04:13:20.571Z",
-    "end": "2023-09-23T04:13:20.950Z",
-    "duration": 379
+    "start": "2023-09-23T04:39:37.323Z",
+    "end": "2023-09-23T04:39:37.717Z",
+    "duration": 394
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,7 +62,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -111,7 +111,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -125,20 +125,48 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last element of the collection",
+      "fullTitle": "index.js myLast returns the last element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myLast returns the last n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -147,13 +175,13 @@
   "pending": [],
   "failures": [
     {
-      "title": "returns the first element of the collection",
-      "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "title": "retrieves all the names of the object's own enumerable properties",
+      "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:161:7)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "myFirst is not defined"
+        "stack": "ReferenceError: myKeys is not defined\n    at Context.<anonymous> (test/indexTest.js:241:14)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "myKeys is not defined"
       }
     }
   ],
@@ -161,7 +189,7 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -210,7 +238,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -259,7 +287,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -273,20 +301,48 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last element of the collection",
+      "fullTitle": "index.js myLast returns the last element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myLast returns the last n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
