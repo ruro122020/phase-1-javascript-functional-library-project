@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 6,
-    "tests": 15,
-    "passes": 15,
+    "suites": 7,
+    "tests": 17,
+    "passes": 17,
     "pending": 0,
     "failures": 1,
-    "start": "2023-09-23T03:53:44.681Z",
-    "end": "2023-09-23T03:53:45.091Z",
-    "duration": 410
+    "start": "2023-09-23T04:06:14.917Z",
+    "end": "2023-09-23T04:06:15.323Z",
+    "duration": 406
   },
   "tests": [
     {
@@ -34,7 +34,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -104,7 +104,7 @@
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -114,18 +114,32 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [
+    },
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
       "duration": 1,
       "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly returns an empty array if no matching values are found",
+      "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "correctly returns the size of the collection when an array is passed",
+      "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
+      "duration": 0,
+      "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: myFilter is not defined\n    at Context.<anonymous> (test/indexTest.js:134:29)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "myFilter is not defined"
+        "stack": "ReferenceError: mySize is not defined\n    at Context.<anonymous> (test/indexTest.js:149:7)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "mySize is not defined"
       }
     }
   ],
@@ -154,7 +168,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -224,13 +238,27 @@
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly filters for values that the callback evaluates as true",
+      "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly returns an empty array if no matching values are found",
+      "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
